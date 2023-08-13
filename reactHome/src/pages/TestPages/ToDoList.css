@@ -1,0 +1,13 @@
+body {
+    background-color: yellowgreen;
+}
+
+.listWrapper {
+    background-color: pink;
+    width: 600px;
+    margin: 100px auto 0;
+
+    .text {
+        width: 200px;
+    }
+}
