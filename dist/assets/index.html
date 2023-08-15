@@ -1,1 +1,22 @@
-<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Document</title><script defer=defer src=/assets/scripts/runtime.2362f.bundle.js></script><script defer=defer src=/assets/scripts/app.80c21.bundle.js></script><link href=/assets/styles/app.31d6c.css rel=stylesheet></head><body></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        网易云音乐
+    </title>
+    <!-- 用模板来替换title， title配置在webpack.development.js -->
+    <script defer src="/scripts/app.bundle.js"></script>
+    <link href="/styles/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 开发阶段，可以把一些库通过script标签引入，然后在webpack externals里排除打包，这样本地开发快。 -->
+    <!-- 但是会有个问题 多人开发 大家都需要把一些库放到本地 需要约定个文件夹 或者 xx  -->
+    <!-- <script src="localhost:js/react.js"></script> -->
+    <div id="main"></div>
+</body>
+
+</html>

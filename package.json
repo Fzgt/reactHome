@@ -6,7 +6,11 @@
   "scripts": {
     "client:dev": "webpack --mode development",
     "client:server": "webpack serve --mode development",
-    "client:prod": "webpack --mode production"
+    "client:prod": "webpack --mode production",
+    "prepare": "husky install",
+    "lint": "npm run lint:script && npm run lint:style",
+    "lint:style": "stylelint --fix \"src/**/*.{css,scss}\"",
+    "lint:script": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./src"
   },
   "dependencies": {
     "axios": "^1.4.0",
@@ -15,31 +19,66 @@
     "react-router-dom": "^6.14.1",
     "recoil": "^0.7.7",
     "tsc": "^2.0.4",
-    "typescript": "^5.1.6"
+    "typescript": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
     "babel-loader": "^9.1.3",
     "clean-webpack-plugin": "^4.0.0",
+    "commitlint": "^17.7.1",
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
     "cssnano": "^6.0.1",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^37.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.33.1",
     "html-webpack-plugin": "^5.5.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.0",
     "mini-css-extract-plugin": "^2.7.6",
     "optimize-css-assets-webpack-plugin": "^6.0.1",
     "postcss-loader": "^7.3.3",
     "postcss-preset-env": "^9.0.0",
+    "prettier": "^3.0.1",
     "scripty": "^2.1.1",
+    "stylelint": "^15.10.2",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recess-order": "^4.3.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^10.0.0",
+    "stylelint-prettier": "^4.0.2",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^5.9.0",
     "yargs-parser": "^21.1.1"
+  },
+  "husky": {
+    "pre-commit": "npm run lint"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,tsx,ts}": [
+      "npm run lint:script",
+      "git add ."
+    ],
+    "**/*.{scss}": [
+      "npm run lint:style",
+      "git add ."
+    ]
   }
 }

@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'development',
     output: {
+        publicPath: '/',
         assetModuleFilename: "images/[name][ext]",
         filename: "scripts/[name].bundle.js"
     },
@@ -26,7 +27,8 @@ module.exports = {
     devtool: "source-map", //打包后的代码与源代码的映射，线上要处理一下 不然控制台source里会暴露代码。
     plugins: [
         new HtmlWebpackPlugin({
-            title: "京程一灯vip官网",
+            favicon: resolve(__dirname, '../src/assets/images/logo.png'),
+            title: "网易云音乐",
             filename: "index.html",
             template: resolve(__dirname, "../src/index-dev.html")
         })
