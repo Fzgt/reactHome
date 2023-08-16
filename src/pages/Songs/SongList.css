@@ -2,7 +2,7 @@ body {
   background-color: yellowgreen;
 }
 
-/* .list-wrapper {
+.list-wrapper {
   width: 600px;
   margin: 100px auto 0;
   background-color: pink;
@@ -10,4 +10,4 @@ body {
   .text {
     width: 200px;
   }
-} */
+}
