@@ -1,6 +1,6 @@
 import Banner from '@pages/Banner/index';
 import SongList from '@pages/Songs/SongList';
-import { React } from 'react';
+import React from 'react';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
