@@ -5,6 +5,11 @@ module.exports = {
             features: {
                 "nesting-rules": true
             }
-        }
+        },
+        "tailwindcss/nesting": {},
+        "postcss-import": {},
+        tailwindcss: {},
+        autoprefixer: {},
+        // "postcss-nesting": {},
     }
 }

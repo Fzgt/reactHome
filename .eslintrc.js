@@ -10,7 +10,7 @@ module.exports = {
         "plugin:@typescript-eslint/recommended",
         // 1. 接入 prettier 的规则
         "prettier",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
     ],
     parser: "@typescript-eslint/parser",
     parserOptions: {
@@ -28,5 +28,10 @@ module.exports = {
         quotes: ["error", "single"],
         semi: ["error", "always"],
         "react/react-in-jsx-scope": "off"
-    }
+    },
+    settings: {
+        react: {
+            version: "detect",
+        },
+    },
 };

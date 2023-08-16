@@ -1,0 +1,1 @@
+yarn run client:server & yarn run dev:css;

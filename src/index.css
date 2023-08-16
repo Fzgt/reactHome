@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Run the CLI tool to scan your template files for classes and build your CSS. */
+
+/* npx tailwindcss -i ./src/index.css -o ./dist/styles/app.css --watch */

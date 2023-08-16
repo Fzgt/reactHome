@@ -1,11 +1,11 @@
 import React from 'react';
-import './ToDoList.css';
+import './SongList.css';
 
 const ToDoList = () => {
   return (
     <>
-      <div className="list-wrapper">
-        <h1>TO DO LIST</h1>
+      <div className="list-wrapper bg-blue">
+        <h1 className="bg-[yellow]">songs</h1>
         <input className="text" type="text" />
       </div>
     </>

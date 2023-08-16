@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import React from 'react';
-// import './index.css';
+import './index.css';
 import { createRoot } from 'react-dom/client';
-import App from '@pages/App';
+import { App } from '@pages/App';
 
 function AppWithCallbackAfterRender() {
   useEffect(() => {

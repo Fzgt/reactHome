@@ -1,5 +1,6 @@
 const { join, resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WebpackBar = require('webpackbar');
 
 module.exports = {
     mode: 'development',
@@ -31,6 +32,10 @@ module.exports = {
             title: "网易云音乐",
             filename: "index.html",
             template: resolve(__dirname, "../src/index-dev.html")
-        })
+        }),
+        new WebpackBar({
+            name: '风中告退',
+            profile: true,
+        }),
     ]
 }

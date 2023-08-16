@@ -3,9 +3,9 @@ body {
 }
 
 .list-wrapper {
-  background-color: pink;
   width: 600px;
   margin: 100px auto 0;
+  background-color: pink;
 
   .text {
     width: 200px;
