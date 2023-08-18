@@ -34,7 +34,7 @@ module.exports = {
             template: resolve(__dirname, "../src/index-dev.html")
         }),
         new WebpackBar({
-            name: '风中告退',
+            name: '前端之神风中告退',
             profile: true,
         }),
     ]

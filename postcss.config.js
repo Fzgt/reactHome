@@ -8,7 +8,7 @@ module.exports = {
         },
         "tailwindcss/nesting": {},
         "postcss-import": {},
-        tailwindcss: {},
+        // tailwindcss: {},
         autoprefixer: {},
         // "postcss-nesting": {},
     }
