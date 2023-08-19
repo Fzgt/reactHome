@@ -1,6 +1,8 @@
 import React from 'react';
 import Layout from '@pages/Layout/index';
 
-export const App = () => {
+const App: React.FC = () => {
   return <Layout />;
 };
+
+export default App;

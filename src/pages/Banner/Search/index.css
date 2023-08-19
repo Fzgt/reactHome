@@ -1,0 +1,22 @@
+.search-wrapper {
+  width: 400px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  input {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: 300px;
+  }
+
+  .show-box {
+    position: absolute;
+    background-color: #fff;
+
+    li {
+      padding: 8px;
+    }
+  }
+}

@@ -13,7 +13,6 @@ export interface QuesParams {
   curQuesIndex: number;
   curQid?: number;
   totalPage: number;
-  // quesList: any[];
 }
 
 export const initQuesListParams = (): QuesListParams => ({
@@ -27,6 +26,5 @@ export const initQuesListParams = (): QuesListParams => ({
 export const initQuesParams = (): QuesParams => ({
   curNav: 1,
   curQuesIndex: -1,
-  totalPage: 1,
-  quesList: []
+  totalPage: 1
 });

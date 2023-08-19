@@ -1,7 +1,3 @@
-// import axios, { AxiosResponse, AxiosRequestConfig } from "axios";
-// import { addPending, removePending } from "./cancel";
-// import { storage } from "../localStorage/index";
-// import { LoginInfo } from "@models/loginInfo";
 import axios from 'axios';
 import qs from 'qs';
 
@@ -14,28 +10,6 @@ const rq = axios.create({
   // },
   // withCredentials: true,
 });
-// rq.interceptors.request.use((config: AxiosRequestConfig) => {
-//   let userInfo: Partial<LoginInfo> = {};
-//   try {
-//     userInfo = storage.get("userInfo");
-//   } catch (error) {
-//     userInfo = {};
-//   }
-//   config.headers.xs = (userInfo && userInfo.sign) || "";
-//   addPending(config);
-//   return config;
-// });
-// rq.interceptors.response.use(
-//   (res: AxiosResponse) => {
-//     removePending(res);
-//     return res.data as any;
-//   },
-//   (err) => {
-//     if (!axios.isCancel(err)) {
-//       console.error(err);
-//     }
-//   }
-// );
 const http = {
   get(url: string) {
     return rq({
