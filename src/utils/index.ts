@@ -1,5 +1,5 @@
 import { storage } from './localStorage';
-import { http } from './request/http';
-import { scrollToAnchor } from './scrollToAnchor';
+import { http } from './http';
+import loadable from './loadable';
 
-export { storage, http, scrollToAnchor };
+export { storage, http, loadable };
