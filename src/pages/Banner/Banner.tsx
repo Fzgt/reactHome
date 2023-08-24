@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { search } from '@api/index';
-import SearchBox from './Search/index';
+import SearchBox from './Search/SearchBox';
+import React from 'react';
 import './index.css';
 
 const Banner: React.FC = () => {
@@ -23,7 +23,6 @@ const Banner: React.FC = () => {
       <div>
         <Link to="/my-music">电台</Link>
       </div>
-      <Outlet />
     </div>
   );
 };

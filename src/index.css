@@ -5,3 +5,8 @@
 /* Run the CLI tool to scan your template files for classes and build your CSS. */
 
 /* npx tailwindcss -i ./src/index.css -o ./dist/styles/app.css --watch */
+
+/* @fontsource/roboto/300.css'; */
+/* @fontsource/roboto/400.css';
+@fontsource/roboto/500.css';
+@fontsource/roboto/700.css'; */
