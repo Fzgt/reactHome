@@ -2,7 +2,7 @@ import React from 'react';
 import { RouteObject, useRoutes } from 'react-router-dom';
 import { loadable } from '@utils/index';
 
-const Layout = loadable(() => import('@pages/Layout'));
+const Layout = loadable(() => import('@pages/Layout/Layout'));
 // const ListPage = loadable(() => import('@/pages/List-page'));
 // export const Edit = loadable(() => import('@/pages/Edit'));
 // const NotFound = loadable(() => import('@/pages/NotFound'));
